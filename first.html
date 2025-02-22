@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Service Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius="small"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <nav class="bg-white shadow">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8"> 
+           <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">  
+                      <img class="h-8 w-auto" src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Logo">
+                    </div> 
+               </div>
+                <div class="flex items-center">
+                    <button class="rounded-button bg-custom text-white px-4 py-2 text-sm font-medium">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+            <div class="p-6">
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-4">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <div class="text-sm font-medium text-gray-500">Total Tasks</div>
+                        <div class="mt-2 text-3xl font-semibold">24</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <div class="text-sm font-medium text-gray-500">Completed</div>
+                        <div class="mt-2 text-3xl font-semibold">18</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <div class="text-sm font-medium text-gray-500">Pending</div>
+                        <div class="mt-2 text-3xl font-semibold">4</div>
+                    </div>
+                    <!-- <div class="bg-gray-50 p-4 rounded-lg"> -->
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <div class="text-sm font-medium text-gray-500">In Progress</div>
+                        <div class="mt-2 text-3xl font-semibold">2</div>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <div class="flex justify-between items-center mb-6">
+                        <h2 class="text-lg font-medium">Current Tasks</h2>
+                        <div class="flex space-x-4">
+                            <select class="!rounded-button border-gray-300 text-sm" placeholder="All Status">
+                                <option hidden>All Status</option>
+                                <option>Pending</option>
+                                <option>Completed</option>
+                                <option>In Progress</option>
+                            </select>
+                            <!-- <button class="!rounded-button bg-custom text-white px-4 py-2 text-sm font-medium">
+                                <i class="fas fa-plus mr-2"></i>New Task
+                            </button> -->
+                        </div>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Task ID</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tenant Details</th>
+                                    <!-- <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Property</th> -->
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tenant Address</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Type</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                                    <!-- <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Time</th> -->
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">#1234</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                        <div class="text-sm text-gray-900">xyz</div>
+                                        <div class="text-sm text-gray-500">+1 974-567-8900</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">Flat 4A, 123 Main St</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">Deep Clean</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <select class="border-gray-300 text-sm rounded-md px-4 py-1">
+                                            <option class="bg-red-100 text-red-800">Pending</option>
+                                            <option class="bg-green-100 text-green-800">Completed</option>
+                                            <option >In Progress</option>
+                                        </select>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">2024-02-20</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                        <button class="text-green-600 hover:text-green-800">
+                                            <i class="fas fa-check"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">#1235</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                        <div class="text-sm text-gray-900">xyz</div>
+                                        <div class="text-sm text-gray-500">+1 974-567-8978</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">Flat 2B, 456 Oak Ave</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">Regular Clean</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <select class="border-gray-300 text-sm rounded-md px-4 py-1">
+                                            <!-- <option>In Progress</option> -->
+                                            <option class="bg-red-100 text-red-800">Pending</option>
+                                            <option selected class="bg-green-100 text-green-800">Completed</option>
+                                            <option >In Progress</option>
+
+                                        </select>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                        2024-02-19
+                                    </td>  
+
+                                   <!-- <td class="px-6 py-4">     
+                                        <div class="text-sm text-gray-900">
+                                            <input type="date" class="border rounded px-2 py-1 mb-1 w-[50%]" />
+                                            <input type="time" class="border rounded px-2 py-1 w-[50%]" />
+                                        </div>
+                                    </td> -->
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                        <button class="text-green-600 hover:text-green-800">
+                                            <i class="fas fa-check"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
